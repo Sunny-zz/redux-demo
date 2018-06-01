@@ -1,8 +1,11 @@
 import React from 'react'
 import Home from '../components/Home'
-
-const HomeContainer = () => {
-  return <Home />
+import { connect } from 'react-redux'
+const HomeContainer = props => {
+  return <Home {...props} />
 }
 
-export default HomeContainer
+const mapStateToProps = state => ({
+  posts: state.posts
+})
+export default connect(mapStateToProps)(HomeContainer)

@@ -5,7 +5,6 @@ import PostComment from './PostComment'
 class Post extends Component {
   render() {
     const { comments } = this.props
-
     return (
       <div>
         <PostBody />
