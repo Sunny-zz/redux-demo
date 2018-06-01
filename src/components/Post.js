@@ -6,10 +6,11 @@ class Post extends Component {
   render() {
     const { comments, match, posts } = this.props
     const { id } = match.params
+    const currentComments = comments.filter(t => t.postId.toString() === id)
     return (
       <div>
-        <PostBody posts={posts} id={id} />
-        <PostComment comments={comments} />
+        <PostBody posts={posts} id={id} comments={currentComments} />
+        <PostComment comments={currentComments} id={id} />
       </div>
     )
   }

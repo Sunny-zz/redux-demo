@@ -12,7 +12,8 @@ class PostComment extends Component {
   }
   addComment = () => {
     const { text } = this.state
-    const comment = { id: shotrId(), body: text }
+    const { id } = this.props
+    const comment = { id: shotrId(), body: text, postId: Number(id) }
     store.dispatch({ type: 'ADD_COMMENT', comment })
   }
   render() {

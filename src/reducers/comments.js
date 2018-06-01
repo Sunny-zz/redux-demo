@@ -1,11 +1,13 @@
 const initialState = [
   {
     id: 1,
-    body: '哈哈哈'
+    body: 'git 呜哈哈',
+    postId: 1
   },
   {
     id: 2,
-    body: '哈'
+    body: 'react 很不错',
+    postId: 2
   }
 ]
 const comments = (state = initialState, action) => {
