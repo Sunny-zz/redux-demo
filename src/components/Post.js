@@ -4,10 +4,11 @@ import PostComment from './PostComment'
 
 class Post extends Component {
   render() {
-    const { comments } = this.props
+    const { comments, match, posts } = this.props
+    const { id } = match.params
     return (
       <div>
-        <PostBody />
+        <PostBody posts={posts} id={id} />
         <PostComment comments={comments} />
       </div>
     )

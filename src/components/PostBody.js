@@ -2,7 +2,9 @@ import React, { Component } from 'react'
 
 class PostBody extends Component {
   render() {
-    return <div>11111</div>
+    const { posts, id } = this.props
+    const post = <div>{posts.find(t => t.id.toString() === id).title}</div>
+    return post
   }
 }
 
