@@ -8,5 +8,22 @@
       "id": 2,
       "title": "react"
     }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "git 不错",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "body": "react cery nice",
+      "postId": 2
+    },
+    {
+      "body": "wwwww",
+      "postId": 1,
+      "id": 3
+    }
   ]
 }

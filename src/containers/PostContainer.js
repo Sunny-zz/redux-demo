@@ -9,4 +9,5 @@ const mapStateToProps = state => ({
   comments: state.comments,
   posts: state.posts
 })
+
 export default connect(mapStateToProps, { addComment })(PostContainer)

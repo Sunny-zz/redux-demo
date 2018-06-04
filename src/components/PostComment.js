@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 // import store from '../store'
-
-import shotrId from 'shortid'
 class PostComment extends Component {
   state = {
     text: ''
@@ -14,8 +12,7 @@ class PostComment extends Component {
   addComment = () => {
     const { text } = this.state
     const { id, addComment } = this.props
-    const comment = { id: shotrId(), body: text, postId: Number(id) }
-
+    const comment = { body: text, postId: Number(id) }
     // store.dispatch({ type: 'ADD_COMMENT', comment })
     addComment(comment)
   }
